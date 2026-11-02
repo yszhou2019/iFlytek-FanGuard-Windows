@@ -1,0 +1,22 @@
+{
+  "_comment": "FanGuard configuration. Edit targetCpuPercent to change the CPU cap the process is held at (this is the number Task Manager shows). Run .\\FanGuard.ps1 install after editing.",
+
+  "processName": "iFlyIMEConnector",
+
+  "targetCpuPercent": 5,
+
+  "periodMs": 400,
+  "minRunMs": 5,
+  "maxRunMs": 380,
+  "initialRunMs": 40,
+
+  "controlWindowSec": 3,
+  "deadbandPercent": 1.0,
+
+  "useEfficiencyMode": true,
+  "highResTimer": true,
+
+  "taskName": "FanGuard",
+  "logFile": "FanGuard.log",
+  "maxLogSizeKb": 256
+}
